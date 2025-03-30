@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+canvas {
+  display: block;
+}
+
+#menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0;
+  width: 300px;
+}
+
+#menu h1 {
+  display: none;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+  margin: 10px 55px;
+  background-image: url('background/button.webp');
+  background-size: cover;
+  padding: 20px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+#menu ul li a:hover {
+  color: #ffcc00;
+}
