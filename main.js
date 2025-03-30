@@ -11,7 +11,6 @@ const config = {
   scene: {
     preload: preload,
     create: create,
-    update: update
   }
 };
 
@@ -33,9 +32,4 @@ function create() {
   background.setDisplaySize(this.sys.game.config.width, this.sys.game.config.height);
   this.player = this.physics.add.sprite(this.sys.game.config.width, this.sys.game.config.height, 'player').setOrigin(1, 1);
   this.player.setScale(0.5); // Reduce the size of the player to half
-}
-
-function update() {
-  console.log('Updating game state...');
-
 }
