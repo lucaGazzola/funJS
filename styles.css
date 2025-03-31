@@ -31,10 +31,15 @@ canvas {
 }
 
 #menu ul li {
-  margin: 10px 55px;
-  background-image: url('background/button.webp');
+  margin: 10px 0;
+  background-image: url('images/background/button.webp');
   background-size: cover;
   padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px; /* Adjust height as needed */
 }
 
 #menu ul li a {
@@ -42,6 +47,9 @@ canvas {
   font-size: 24px;
   color: #ffffff;
   transition: color 0.3s;
+  display: inline-block;
+  width: 100%; /* Ensure the link takes up the full width */
+  text-align: center; /* Center the text */
 }
 
 #menu ul li a:hover {
