@@ -1,57 +1,34 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background: url('images/background/dark-forest.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Verdana', cursive, sans-serif;
 }
 
-canvas {
-  display: block;
-}
-
-#menu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 0;
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 300px;
 }
 
-#menu h1 {
-  display: none;
-}
-
-#menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#menu ul li {
-  margin: 10px 0;
-  background-image: url('images/background/button.webp');
-  background-size: cover;
+.menu-item {
+  display: block;
   padding: 20px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px; /* Adjust height as needed */
-}
-
-#menu ul li a {
+  background: url('images/background/button.webp') no-repeat center center;
+  background-size: cover;
+  color: white;
   text-decoration: none;
   font-size: 24px;
-  color: #ffffff;
-  transition: color 0.3s;
-  display: inline-block;
-  width: 100%; /* Ensure the link takes up the full width */
-  text-align: center; /* Center the text */
-}
-
-#menu ul li a:hover {
-  color: #ffcc00;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
 }
