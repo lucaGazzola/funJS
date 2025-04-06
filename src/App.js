@@ -17,9 +17,9 @@ function App() {
   };
 
   return (
-      <div className="App" style={appStyle}>
-        <Menu />
-      </div>
+    <div className="App" style={appStyle}>
+      <Menu />
+    </div>
   );
 }
 

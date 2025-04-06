@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import './StoryViewer.css';
 import bim1 from '../images/story/bim1.png';
 import bim2 from '../images/story/bim2.png';
@@ -21,17 +21,33 @@ function StoryViewer({onBack}) {
     bim7
   ];
 
-  const handleNextImage = () => {
+  const handleNextImage = useCallback(() => {
     if (currentImageIndex < storyImages.length - 1) {
       setCurrentImageIndex(currentImageIndex + 1);
     }
-  };
+  }, [currentImageIndex, storyImages.length]);
 
-  const handlePrevImage = () => {
+  const handlePrevImage = useCallback(() => {
     if (currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
     }
-  };
+  }, [currentImageIndex]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'ArrowRight') {
+        handleNextImage();
+      } else if (event.key === 'ArrowLeft') {
+        handlePrevImage();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleNextImage, handlePrevImage]);
 
   return (
       <div className="story-viewer">
