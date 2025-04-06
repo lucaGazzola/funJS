@@ -1,5 +1,6 @@
 import './App.css';
 import background from './images/background/dark-forest.png';
+import Menu from './components/Menu';
 
 function App() {
   const appStyle = {
@@ -17,6 +18,7 @@ function App() {
 
   return (
       <div className="App" style={appStyle}>
+        <Menu />
       </div>
   );
 }
