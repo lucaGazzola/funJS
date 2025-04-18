@@ -97,9 +97,7 @@ function StoryViewer({onBack}) {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'ArrowRight') {
-        if (!isAudioPlaying || confirm("Audio is still playing. Continue to next page?")) {
-          handleNextImage();
-        }
+        handleNextImage();
       } else if (event.key === 'ArrowLeft') {
         handlePrevImage();
       }
@@ -110,7 +108,7 @@ function StoryViewer({onBack}) {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [handleNextImage, handlePrevImage, isAudioPlaying]);
+  }, [handleNextImage, handlePrevImage]);
 
   const handleAudioEnded = () => {
     setIsAudioPlaying(false);
@@ -145,7 +143,6 @@ function StoryViewer({onBack}) {
               <button
                   className="nav-button next-button"
                   onClick={handleNextImage}
-                  disabled={isAudioPlaying}
               >
                 &#8594;
               </button>
