@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Foresta - Interactive Italian Storybook
+
+Foresta is an interactive storybook application built with React that allows users to read and listen to children's stories in Italian. The application currently features "Coniglino bim bim," a story about a rabbit named Bim Bim who goes on adventures.
+
+## Features
+
+- **Interactive Story Navigation**: Navigate through story chapters using on-screen buttons or keyboard arrow keys
+- **Audio Narration**: Each page includes audio narration in Italian
+- **Illustrated Content**: Beautiful illustrations accompany each chapter of the story
+- **Responsive Design**: Optimized for various screen sizes
+- **User-Friendly Interface**: Simple menu system for easy navigation
+
+## Story Content
+
+The application currently includes one story:
+
+- **Coniglino bim bim**: A children's story in Italian about a rabbit named Bim Bim, his brother Bam Bam, and their adventures. The story is divided into 11 chapters, each with its own illustration and audio narration.
+
+## How to Use
+
+1. Launch the application
+2. From the main menu, select "Stories"
+3. Choose "Coniglino bim bim" from the stories menu
+4. Navigate through the story using:
+   - The arrow buttons on screen
+   - Left and right arrow keys on your keyboard
+5. Each page displays:
+   - An illustration
+   - Text of the story
+   - Automatic audio narration
+
+## Installation and Setup
+
+### Prerequisites
+
+- Node.js (version 14 or higher recommended)
+- npm (comes with Node.js)
+
+### Installation Steps
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/funJS.git
+   cd funJS
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+   ```
+   npm start
+   ```
+
+4. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
+
+## Building for Production
+
+To create a production build:
+
+```
+npm run build
+```
+
+This creates optimized files in the `build` folder that can be deployed to any static hosting service.
+
+## Technologies Used
+
+- React 19.1.0
+- CSS for styling
+- HTML5 Audio for narration playback
+
+## Future Development
+
+- Additional stories
+- Interactive games section
+- Multi-language support
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
