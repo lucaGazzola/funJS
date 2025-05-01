@@ -33,7 +33,7 @@ function Menu() {
       <nav className="menu">
         <ul className="menu-list">
           <li className="menu-item">
-            <a href="/games">Games</a>
+            <a href="/games">Games (Coming Soon)</a>
           </li>
           <li className="menu-item">
             <a href="/stories" onClick={handleStoriesClick}>Stories</a>
